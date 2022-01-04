@@ -22,7 +22,7 @@ public class Truck extends Vehicle {
     * @param topSpeed speed
     * @param inicialPlate plate
     */
-    public void Truck(final String inicialColour, final int topSpeed,
+    public Truck(final String inicialColour, final int topSpeed,
                    final String inicialPlate) {
         super(inicialColour, topSpeed);
         this.licensePlate = inicialPlate;
@@ -60,6 +60,6 @@ public class Truck extends Vehicle {
     * @param airPressure air pressure
     */
     public void applyAir(final int airPressure) {
-        speed = speed - airPressure / 2;
+        super.setSpeed(super.getSpeed() - airPressure / 2);
     }
 }

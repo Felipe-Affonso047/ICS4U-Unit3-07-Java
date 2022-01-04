@@ -74,7 +74,8 @@ final class Main {
         bmx.accelerate(FITHTEEN);
         bmx.status();
 
-        System.out.println("\nRing bell.");
+        System.out.println("\nRing bell:");
+        bmx.ringBell();
 
         final Truck bigTruck = new Truck("Grey", 200, "HGC-3456F");
 
@@ -90,7 +91,7 @@ final class Main {
         System.out.println(NEW_SPEED + bigTruck.getSpeed());
 
         System.out.println("\nApplyed air pressure of 10:");
-        bigTruck.applyAir(10);
+        bigTruck.applyAir(TEN);
         System.out.println(NEW_SPEED + bigTruck.getSpeed());
 
         System.out.println("\nDone.");

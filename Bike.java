@@ -20,9 +20,8 @@ public class Bike extends Vehicle {
     *
     * @param inicialColour colour
     * @param topSpeed speed
-    * @param inicialCadense cadense
     */
-    public void Bike(final String inicialColour, final int topSpeed) {
+    public Bike(final String inicialColour, final int topSpeed) {
         super(inicialColour, topSpeed);
         this.cadense = 0;
     }
@@ -43,9 +42,9 @@ public class Bike extends Vehicle {
     */
     public void setCadense(final int newCadense) {
         this.cadense = newCadense;
-        super.speed = cadense * 2;
-        if (super.speed > super.maxSpeed) {
-                super.speed = super.maxSpeed;
+        super.setSpeed(cadense * 2);
+        if (super.getSpeed() > super.getMaxSpeed()) {
+            super.setSpeed(super.getMaxSpeed());
         }
     }
 
@@ -70,6 +69,6 @@ public class Bike extends Vehicle {
     * Ring bell.
     */
     public void ringBell() {
-        System.out.println("\nDing, ding.");
+        System.out.println("\nDing, ding.\n");
     }
 }

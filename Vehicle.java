@@ -29,11 +29,9 @@ public class Vehicle {
     * Constructor.
     *
     * @param inicialColour colour
-    * @param inicialPlate plate
-    * @param inicialDoor door
     * @param topSpeed speed
     */
-    public void Vehicle(final String inicialColour, final int topSpeed) {
+    public Vehicle(final String inicialColour, final int topSpeed) {
         this.colour = inicialColour;
         this.maxSpeed = topSpeed;
         this.speed = 0;
@@ -64,6 +62,15 @@ public class Vehicle {
     */
     public String getColour() {
         return this.colour;
+    }
+
+    /**
+    * Setter.
+    *
+    * @param newSpeed good
+    */
+    public void setSpeed(final int newSpeed) {
+        this.speed = newSpeed;
     }
 
     /**
